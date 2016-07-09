@@ -1,6 +1,6 @@
 # JOOQ + PostgreSQL + DAO = exception
 
-Sample application that demonstrates problem with persisting generated POJO with UDT column by DAO object.
+Sample application that demonstrates problem with persisting generated POJO with UDT column by DAO.
 
 ## Getting started
 
