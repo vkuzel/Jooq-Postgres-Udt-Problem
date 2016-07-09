@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.8.0.xsd">
+    <jdbc>
+        <driver>org.postgresql.Driver</driver>
+        <url>jdbc:postgresql://127.0.0.1:5432/jooqproblem</url>
+        <user>jooqproblem</user>
+        <password>jooqproblem</password>
+    </jdbc>
+
+    <generator>
+        <name>org.jooq.util.JavaGenerator</name>
+
+        <database>
+            <name>org.jooq.util.postgres.PostgresDatabase</name>
+            <inputSchema>public</inputSchema>
+            <includes>.*</includes>
+            <excludes/>
+        </database>
+
+        <target>
+            <packageName>com.jooq.test</packageName>
+            <directory>src/generated/java</directory>
+        </target>
+
+        <generate>
+            <pojos>true</pojos>
+            <daos>true</daos>
+            <springAnnotations>true</springAnnotations>
+        </generate>
+    </generator>
+</configuration>
