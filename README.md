@@ -12,3 +12,7 @@ Sample application that demonstrates problem with persisting generated POJO with
     Caused by: org.jooq.exception.DataTypeException: Cannot convert from SomeUdt (12345) (class com.jooq.test.udt.pojos.SomeUdt) to class com.jooq.test.udt.records.SomeUdtRecord
     	at org.jooq.tools.Convert$ConvertAll.fail(Convert.java:1113) ~[jooq-3.8.3.jar:na]
     ````
+
+## More information
+
+This problem has been reported in https://github.com/jOOQ/jOOQ/issues/5401
