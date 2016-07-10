@@ -20,6 +20,7 @@
         <target>
             <packageName>com.jooq.test</packageName>
             <directory>src/generated/java</directory>
+            <encoding>UTF-8</encoding>
         </target>
 
         <generate>
