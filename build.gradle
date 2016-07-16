@@ -42,6 +42,5 @@ dependencies {
     }
     generatedCompile('org.jooq:jooq:3.8.3')
     compile sourceSets.generated.output
-
-	runtime('org.postgresql:postgresql')
+    runtime('org.postgresql:postgresql')
 }
