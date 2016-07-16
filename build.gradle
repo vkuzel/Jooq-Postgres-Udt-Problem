@@ -25,22 +25,17 @@ repositories {
 }
 
 sourceSets {
-	generated {
+	main {
 		java {
 			srcDir 'src/generated/java'
 		}
 	}
 }
 
-configurations {
-    compile.extendsFrom generatedCompile
-}
-
 dependencies {
-    generatedCompile('org.springframework.boot:spring-boot-starter-jooq') {
+    compile('org.springframework.boot:spring-boot-starter-jooq') {
         exclude group: 'org.jooq'
     }
-    generatedCompile('org.jooq:jooq:3.8.3')
-    compile sourceSets.generated.output
+    compile('org.jooq:jooq:3.8.3')
     runtime('org.postgresql:postgresql')
 }
